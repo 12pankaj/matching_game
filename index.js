@@ -53,6 +53,7 @@
 				seconds=-1;
 				d=1;
 				clearInterval(tim);
+				alertme();
 			}	
 	  }, 1000);
 	}
@@ -100,25 +101,21 @@
 			d=1;
 			me.innerText="You Lose"
 			me.classList.add("text-danger")
-		  setTimeout(()=>{
-			  console.log("lose")
-			var conf=confirm("Congrats!\nyour Score is ="+sc+"\nyour timing is left ="+timer.innerText+"\nyou play agian")
-			if(conf==true && ch==0)	location.reload()
-			else		alert("bye bye...")
-		},3000);
-		
+		  alertme();
 		}
 		else if((arr.length)==arr1.length)
 		{	win.play();
 			d=1;
 			me.innerText="You Win"
 			me.classList.add("text-warning")
-		 
-		 setTimeout(()=>{
+		 	alertme();
+		}
+}
+function alertme(){
+	 setTimeout(()=>{
 			var conf=confirm("Congrats!\nyour Score is ="+sc+"\nyour timing is left ="+timer.innerText+"\nyou play agian")
 			if(conf==true && ch==0)	location.reload()
-			else		alert("bye bye...")
+			else		alert("bye bye...\n Thanks for Playing game")
 		},3000);
-		 
-		}
+		
 }
