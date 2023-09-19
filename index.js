@@ -106,5 +106,12 @@
 			d=1;
 			me.innerText="You Win"
 			me.classList.add("text-warning")
+		 
+		 setTimeout(()=>{
+			var conf=confirm("Congrats!\nyour Score is ="+sc+"\nyour timing is left ="+timer.innerText+"\nyou play agian")
+			if(conf==true && ch==0)	location.reload()
+			else		alert("bye bye...")
+		},3000);
+		 
 		}
 }
