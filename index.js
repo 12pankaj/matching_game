@@ -113,9 +113,8 @@
 }
 function alertme(){
 	 setTimeout(()=>{
-			var conf=confirm("Congrats!\nyour Score is ="+sc+"\nyour timing is left ="+timer.innerText+"\nyou play agian")
-			if(conf==true && ch==0)	location.reload()
+			var conf=confirm("your Score is ="+sc+"\nyour timing is left ="+timer.innerText+"\nyou play agian")
+			if(conf==true)	location.reload()
 			else		alert("bye bye...\n Thanks for Playing game")
-		},3000);
-		
+		},3000);	
 }
