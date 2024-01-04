@@ -81,9 +81,9 @@
 		{
 			if(a[i]==a[i-1] && a[i]== a[i-2])
 			{
-				choice[i].setAttribute("src","#")
-				choice[i-1].setAttribute("src","#")
-				choice[i-2].setAttribute("src","#")
+				choice[i].setAttribute("src"," ")
+				choice[i-1].setAttribute("src"," ")
+				choice[i-2].setAttribute("src"," ")
 				ch=i-2;
 				if(a[i]!=0 || a[i-1]!=0 || a[i-2]!=0)
 				{	sc+=5;
